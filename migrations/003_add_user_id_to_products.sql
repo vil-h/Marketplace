@@ -1,0 +1,6 @@
+ALTER TABLE products
+    ADD COLUMN user_id BIGINT;
+
+ALTER TABLE products
+    ADD CONSTRAINT fk_products_user
+        FOREIGN KEY (user_id) REFERENCES users(id);
