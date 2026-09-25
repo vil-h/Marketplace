@@ -1,0 +1,48 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=GoLand
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "email": "test2@gmail.com",
+      "password": "mypassword123.2"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "test2@gmail.com",
+      "password": "mypassword123.2"
+}
+
+###
+
+POST localhost:8080/createproduct
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTAyNTMyOTAsImlhdCI6MTc5MDE2Njg5MCwic3ViIjozfQ.d1QtbA7EEnMcIW3Ow_dN3LCswxFYMNJ12XelsBZksWU
+
+
+
+{
+  "name": "Banan",
+  "price": 30.0
+}
+
+###
+DELETE localhost:8080/product/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODg4NzE5OTIsImlhdCI6MTc4ODc4NTU5Miwic3ViIjoxfQ.8md5RaZSLd-Fikryel2tJYRYfovfHPROrOVkrisFduM
+
+###
+GET localhost:8080/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTAzMzg0MTksImlhdCI6MTc5MDI1MjAxOSwic3ViIjozfQ.Y1xSHVJsoUGZcP2BhZN52CMMJQ65hHN8X08_0KYCJxY
+
+
